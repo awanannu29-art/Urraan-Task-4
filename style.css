@@ -7,7 +7,7 @@ body{
     height: 100%;
     border: 30px solid grey;
     border-top: 0px;
-    border-bottom: 0px;
+    /* border-bottom: 0px; */
 }
 header{
     display: flex;
@@ -42,7 +42,7 @@ nav{
     justify-content: end;
     gap: 35px;
     padding-right: 35px;
-    padding-top: 30px;
+    padding-top: 25px;
 }
 a{
     text-decoration: none;
@@ -92,6 +92,11 @@ form{
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 20px;
 }
+.pri{
+    display: flex;
+    padding-top: 10px;
+    gap: 23px;
+}
 input{
     width: 250px;
     height: 30px;
@@ -108,12 +113,18 @@ textarea{
 }
 .btn1{
     background-color: rgb(154, 0, 0) ;
-    height: 40px;
-    width: 300px;
-    margin-top: 40px;
+    height: 50px;
+    width: 320px;
+    /* margin-top: 40px; */
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: 295px;
+    /* margin-left: 295px; */
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+.pri p{
+    color:grey;
+    font-size: 1.3rem;
 }
 .note{
 display: flex;
@@ -157,10 +168,10 @@ section {
 .btn{
     height: 40px;
     width: 150px;
-    margin-left: 220px;
-    margin-top: 0px;
+    margin-left: 250px;
     background-color:  rgb(154, 0, 0);
     color: white;
+    padding-top: 10px;
 }
 .dui img{
     width: 280px;
@@ -179,7 +190,7 @@ section{
     padding-bottom: 10px;
 }
 .law p{
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 20px;
 }
@@ -194,7 +205,7 @@ section{
     height: 40px;
     width: 150px;
     margin-left: 80px;
-    margin-top: 0px;
+    margin-bottom: 10px;
     background-color: rgb(154, 0, 0)  ;
     color: white;
 }
@@ -206,18 +217,19 @@ section{
 .blog{
     padding-bottom: 30px;
     border-right: 1px solid black;
-    padding-right: 35px;
-    padding-left: 35px;
+    padding-right: 25px;
+    padding-left: 25px;
     border-bottom: 1px solid black;
 }
 .cred img{
-    height: 150px;
+    height: 125px;
 }
 .cred{
     display: flex;
+    gap: 20px;
 }
 .cred-t h2{
-    font-size: 2rem;
+    font-size: 1.7rem;
     /* font-family: Arial, Helvetica, sans-serif; */
     padding-bottom: 10px;
     margin-top: 20px;
@@ -234,6 +246,7 @@ section{
     margin-top: 0px;
     background-color: rgb(154, 0, 0)  ;
     color: white;
+    padding-left: 8px;
 }
 .cred-t img{
     margin-left: 40px;
@@ -246,6 +259,7 @@ section{
 }
 section{
     margin-top: 100px;
+    padding-bottom: 60px;
 }
 span{
     color:rgb(154, 0, 0) ;
@@ -254,31 +268,149 @@ span{
 .side1 img{
     position: absolute;
     height: 80px;
-    width: 20px;
+    width: 15px;
     margin-top: 0px;
+    
+   
+    /* margin-top: 0px; */
 }
 .side1{
     height: 80px;
-    width: 320px;
+    width: 310px;
     border: 1px solid black;
     background-color: grey;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
 }
 .side1 h2{
-    font-size: 2.1rem;
+    font-size: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
-    padding-left: 50px;
-    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-bottom: 17px;
     color: white;
 }
 .side1 h3{
     font-family: Arial, Helvetica, sans-serif;
-    padding-left: 120px;
+    padding-left: 160px;
+    font-size: 1.1rem;
     color: white;
 }
 .side{
-    margin-left: 50px;
+    margin-left: 60px;
+    padding-bottom: 0px;
 }
-.side h2{
-    font-size: 2rem;
+.side h1{
+    font-size: 1.7rem;
+    margin-left: 0px;
+}
+.last{
+    display: flex;
+}
+.right1 img{
+    height: 2px;
+    width: 200px;
+}
+.right1 button{
+    height: 30px;
+    width: 140px;
+    margin-left: 60px;
+    margin-top: 0px;
+    background-color: rgb(154, 0, 0)  ;
+    color: white;
+    
+}
+.para p{
+    font-size: 1.3rem;
+    color: rgb(36, 31, 31);
+}
+.para{
+    padding: 70px;
+    padding-top: 0px;
+}
+.para h1{
+    margin-bottom: 20px;
+}
+.right1 h2{
+    font-size: 1.7rem;
+    padding-bottom: 5px;
+    color: rgb(55, 53, 53);
+}
+.right1 p{
+    font-size: 1.3rem;
+}
+.right1{
+    padding-right: 45px;
+    padding-bottom: 40px;
+}
+.logo{
+    height: 160px;
+    margin-left: 20px;
+}
+.logo1{
+    height: 160px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.follow{
+   margin-top: 20px;
+   margin-left: 20px;
+font-size: 1.9rem;
+}
+.icon img{
+    height: 45px;
+    margin-right: 15px;
+}
+.bullet{
+    width: 100%;
+}
+.last{
+    padding-top: 45px;
+}
+.hr{
+    height: 10px;
+    width: 100%;
+}
+.btn2 img{
+    height:15px;
+    width: 15px;
+    position: relative;
+    left: 5px;
+    top: 1px;
+}
+.btn img{
+    height:15px;
+    width: 15px;
+    position: relative;
+    right:45px ;
+    bottom: 15px;
+}
+.btn3 img{
+    height:15px;
+    width: 15px;
+    position: relative;
+    right:25px ;
+    top: 1px;
+}
+.clk img{
+    height: 15px;
+    width: 15px;
+    position: relative;
+    left: 10px;
+    top: 2px;
+}
+.side1 h3 img{
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+}
+textarea::placeholder{
+    font-size: 20px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 30px;
+}
+h2{
+    color: rgb(55, 53, 53);
+}
+.icon{
+    padding-bottom: 80px;
 }
