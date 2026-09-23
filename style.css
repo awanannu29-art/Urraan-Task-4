@@ -417,9 +417,201 @@ h2{
     padding-bottom: 80px;
 }
 
+@media (max-width: 1200px) {
+header{
+    display: flex;
+    gap: 200px;
+}
+.text{
+    margin-top: 10px;
+}
+.text h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.2rem;
+}
+.text h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(154, 0, 0);
+    font-size: 1.5rem;
+}
+.text h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    font-size: 1.2rem;
+}
+header img{
+    height: 130px;
+}
+nav{
+    background-color: rgb(154, 0, 0);
+    height: 70px;
+    color: white;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: end;
+    gap: 35px;
+    padding-right: 35px;
+    padding-top: 25px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 
+}
+.image img{
+    height: 400px;
+    width: 550px;
+}
+.sec{
+    padding-top: 30px;
+    padding-left: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.pri{
+    display: flex;
+    padding-top: 10px;
+    gap: 23px;
+}
+input{
+    width: 250px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.name h2{
+    padding-bottom: 14px;
+}
+textarea{
+    width: 550px;
+    height: 80px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.btn1{
+    background-color: rgb(154, 0, 0) ;
+    height: 50px;
+    width: 320px;
+    /* margin-top: 40px; */
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    /* margin-left: 295px; */
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+.pri p{
+    color:grey;
+    font-size: 1.3rem;
+}
+.note{
+display: flex;
+}
+.conf img{
+    /* position: absolute; */
+    /* top: 450px; */
+    /* right: 130px; */
+    margin-left: 10px;
+    margin-top: 30px;
+    width: 220px;
+    transform: rotate(20deg);
+    opacity: 0.9;
+}
+section{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+    .dui{
+        padding-left: 50px;
+    }
+
+.sec{
+    display: flex;
+    flex-direction: row;
+}
+
+
+strong{
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Ques{
+    display: flex;
+    gap: 70px;
+}
+.ques h1{
+    background-color:  rgb(154, 0, 0);
+    padding: 10px;
+    color: white;
+    font-size: 1.1rem;
+}
+.form p{
+    font-size: 1.1rem;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+form{
+    /* display: flex; */
+    margin-top: 20px;
+    gap: 10px;
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+    width:650px;
+}
+.form{
+    background-image: url(./img/form_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 520px;
+}
+.pri{
+    /* display: flex; */
+    padding-top: 10px;
+    gap: 23px;
+}
+input{
+    width: 200px;
+    height: 25px;
+    margin-bottom: 10px;
+}
+.name h2{
+    padding-bottom: 15px;
+    font-size:1.1rem;
+}
+textarea{
+    width: 320px;
+    height: 80px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+textarea::placeholder{
+    font-size: 10px;
+}
+.btn1{
+    background-color: rgb(154, 0, 0) ;
+    height: 30px;
+    width: 160px;
+    /* margin-top: 40px; */
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    /* margin-left: 295px; */
+    margin-bottom: 1px;
+    font-size: 0.6rem;
+}
+.pri p{
+    color:grey;
+    font-size: 1rem;
+}
+.conf img{
+    width: 160px;
+}
+
+}
 @media (max-width: 992px) {
-    html body {
+html body {
     overflow-x: hidden;
     scroll-behavior: smooth;
 
@@ -445,7 +637,7 @@ h2{
     }
 
     .text h3 {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     nav{
@@ -467,13 +659,10 @@ a{
 }
 
 section {
-    margin-top: 5px;
-    padding-left: 150px;
-    display: inline;
+ 
+   display: inline;
 }
-    .dui{
-        padding-left: 50px;
-    }
+   
 
 .sec{
     display: flex;
@@ -586,6 +775,7 @@ textarea::placeholder{
     transform: rotate(20deg);
     opacity: 0.9;
 }
+
 }
 
 @media (max-width: 768px) {
