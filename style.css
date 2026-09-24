@@ -417,6 +417,24 @@ h2{
     padding-bottom: 80px;
 }
 
+@media (max-width: 1440px) {
+    
+header{
+    display: flex;
+    gap: 185px;
+}
+.image img{
+     width: 650px;
+    
+}
+.form{
+    width: 650px ;
+}
+section{
+    padding-left: 5px;
+}
+}
+
 @media (max-width: 1200px) {
 header{
     display: flex;
@@ -520,6 +538,22 @@ display: flex;
 section{
     display: grid;
     grid-template-columns: 2fr 1fr;
+    padding-bottom: 420px;
+}
+.btn3{
+    position: relative;
+    height: 40px;
+    width: 150px;
+    margin-top: 0px;
+    background-color: rgb(154, 0, 0)  ;
+    color: white;
+    top: 2rem;
+    left:-19rem;
+}
+.cre{
+    position: absolute;
+    margin-top: 30rem;
+    margin-left: 340px;
 }
 
     .dui{
@@ -608,6 +642,7 @@ textarea::placeholder{
 .conf img{
     width: 160px;
 }
+
 
 }
 @media (max-width: 992px) {
@@ -765,7 +800,8 @@ textarea::placeholder{
 }
 .right1{
     padding-bottom: 50px;
-}.conf img{
+}
+.conf img{
     /* position: absolute; */
     /* top: 350px; */
     /* right: 80px; */
@@ -774,6 +810,16 @@ textarea::placeholder{
     width: 110px;
     transform: rotate(20deg);
     opacity: 0.9;
+}
+.cre{
+    position :absolute;
+    top:11rem;
+    left: 12rem;
+}
+.btn3{
+    position: relative;
+    left: 1rem;
+    top: 1rem;
 }
 
 }
@@ -825,7 +871,10 @@ a{
 section {
     margin-top: 5px;
     padding-left: 10px;
-    display: inline;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 250px;
+    
 }
     .dui{
         padding-left: 70px;
@@ -848,6 +897,11 @@ section {
     .sec{
     display:flex;
 flex-direction: column;
+}
+.btn3{
+    position: relative;
+    left: -18rem;
+    top: 2rem;
 }
 .form{
     background-image: url(./img/form_bg.jpg);
@@ -945,9 +999,12 @@ textarea{
 
 }
 .cre{
-    padding-top: 40px;
-    padding-left: 160px;
-    padding-bottom: 40px;
+  
+    position: relative;
+    margin-top: -9rem;
+    margin-left: -8rem;
+
+
 }
 .cred-t h2{
      font-size: 2.7rem;
@@ -1058,7 +1115,9 @@ a{
 
 section {
     
-    display: inline;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 240px;
 }
     .dui{
         padding-left: 30px;
@@ -1182,9 +1241,10 @@ textarea{
 
 }
 .cre{
-    padding-top: 40px;
-    padding-left: 100px;
-    padding-bottom: 40px;
+    position: relative;
+    margin-top: -12rem;
+    margin-left: -10rem;
+
 }
 .cred-t h2{
      font-size: 34px;
@@ -1277,6 +1337,12 @@ font-size: 1.9rem;
 }
 .right{
     padding-left: 150px;
+}
+.btn3{
+    position: relative;
+    left: -16rem;
+    top: 2rem;
+
 }
 
 }
