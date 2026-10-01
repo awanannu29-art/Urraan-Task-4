@@ -1,2294 +1,2098 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-body {
-    height: 100%;
-    border: 30px solid grey;
-    border-top: 0px;
-    /* border-bottom: 0px; */
+
+.container {
+    max-width: 100%;
+    border: 3px solid black;
+
 }
-header {
+
+.header {
     display: flex;
-    gap: 528px;
+    width: 100%;
+    height: 200px;
+}
+
+.head1 {
+    width: 61%;
+    height: 100%;
+    display: flex;
+}
+
+.head1 img {
+    height: 100%;
     width: 100%;
 }
-.text {
+
+.head2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.headtext {
     margin-top: 25px;
-}
-.text h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 4rem;
-}
-.text h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(154, 0, 0);
-    font-size: 1.9rem;
-}
-.text h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: grey;
-    font-size: 1.5rem;
-}
-header img {
-    width: 129%;
-}
-.image {
     width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: end;
+    margin-right: 30px;
 }
-nav {
-    background-color: rgb(154, 0, 0);
-    height: 70px;
-    color: white;
-    font-size: 1.2rem;
+
+.headtext h2 {
+    font-size: 30px;
+    color: brown;
+    font-weight: 900px;
+    margin-bottom: 9px;
+}
+
+.headtext h6 {
+    font-size: 68px;
+    margin-top: 0px;
+}
+
+.headtext p {
+    font-size: 27px;
+}
+
+.headtext hr {
+    margin-bottom: 0px;
+    width: 375px;
+    height: 5px;
+    background-color: black;
+}
+
+.nav {
+    width: 100%;
+    height: 50px;
     display: flex;
     justify-content: end;
-    gap: 57px;
-    padding-right: 35px;
-    padding-top: 25px;
-    padding-left: 313px;
+    align-items: center;
+    background-color: brown;
+    gap: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+    box-shadow: 0 0 10px black;
+
 }
 
-a {
+.nav a {
     text-decoration: none;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+
 }
 
-.image img {
-    width: 100%;
+a:hover {
+    background-color: lightgray;
 }
 
-.sec {
-    width: 100%;
-    padding-top: 30px;
-    padding-left: 0px;
+.formsection {
     display: flex;
-    gap: 10px;
+    height: 525px;
+    width: 96%;
+    gap: 20px;
+    margin: 30px;
 }
 
-.form {
+.firstpic {
+    width: 54%;
+    height: 100%;
+    display: flex;
+    box-shadow: 0 0 10px black;
+}
+
+.firstpic img {
+    width: 100%;
+    height: 100%;
+}
+
+.secondpic {
+    width: 45%;
+    height: 100%;
+    display: flex;
     background-image: url(./img/form_bg.jpg);
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    flex-direction: column;
+    box-shadow: 0 0 10px black;
+}
+
+.formhead {
+    display: flex;
     width: 100%;
+    height: 100px;
+    flex-direction: row;
 }
 
-strong {
-    color: blue;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.Ques {
+.formh1 {
     display: flex;
-    gap: 70px;
+    width: 210px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
 }
 
-.ques h1 {
-    background-color: rgb(154, 0, 0);
-    padding: 10px;
+.formh2 {
+    display: flex;
+    width: 450px;
+    height: 100px;
+    margin-left: 45px;
+    
+
+}
+
+.formh1 h2 {
+    background-color: brown;
+    width: 210px;
+    height: 60px;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
     color: white;
-    font-size: 1rem;
+
 }
 
-.form p {
-    font-size: 1.6rem;
-    padding-left: 30px;
-    padding-top: 10px;
+.formh2 p {
+    font-size: 24px;
+    font-weight: 600;
 }
 
-form {
-    display: flex;
-    margin-top: 20px;
-    gap: 10px;
-    font-size: 0.9rem;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-left: 20px;
-}
-
-.pri {
-    display: flex;
-    padding-top: 10px;
-    gap: 23px;
-}
-
-input {
-    width: 250px;
-    height: 30px;
-    margin-bottom: 10px;
-}
-
-.name h2 {
-    padding-bottom: 14px;
-}
-
-textarea {
-    width: 550px;
-    height: 80px;
-    margin-top: 20px;
-    margin-left: 40px;
-}
-
-.btn1 {
-    background-color: rgb(154, 0, 0);
-    height: 50px;
-    width: 227px;
-    /* margin-top: 40px; */
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    /* margin-left: 295px; */
-    margin-bottom: 10px;
-    font-size: 1.4rem;
-}
-
-.pri p {
-    color: grey;
-    font-size: 1.3rem;
-}
-
-.note {
-    display: flex;
-}
-
-.conf img {
-    /* position: absolute; */
-    /* top: 450px; */
-    /* right: 130px; */
-    margin-left: 10px;
-    margin-top: 30px;
-    width: 220px;
-    transform: rotate(20deg);
-    opacity: 0.9;
-}
-
-section {
-    margin-top: 10px;
-    padding-left: 50px;
-}
-
-.dui p {
-    font-size: 1.5rem;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.img img {
-    height: 140px;
-    margin-top: 50px;
-    position: absolute;
-    left: 24rem;
-}
-
-.dui h2 {
-    font-size: 2rem;
-    /* font-family: Arial, Helvetica, sans-serif; */
-    padding-bottom: 10px;
-}
-
-.dui h3 {
-    font-size: 1.4rem;
+.formh2 span {
+    color: navy;
+    padding-left: 5px;
+    font-size: 46px;
     font-family: arial;
-    color: rgb(154, 0, 0);
-    padding-bottom: 14px;
+    font-weight: 800;
 }
 
-.note {
-    border-right: 1px solid black;
-}
-
-.btn {
-    height: 40px;
-    width: 150px;
-    margin-left: 250px;
-    background-color: rgb(154, 0, 0);
-    color: white;
-    padding-top: 10px;
-}
-
-.dui img {
-    width: 280px;
-    height: 2px;
-    margin-left: 160px;
-}
-
-.blog {
+.formparagraph {
+    width: 100%;
     display: flex;
-}
-
-section {
-    display: flex;
-}
-
-.law h2 {
-    font-size: 2rem;
-    /* font-family: Arial, Helvetica, sans-serif; */
-    padding-bottom: 10px;
-}
-
-.law p {
-    font-size: 1.4rem;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-bottom: 20px;
-}
-
-.law {
-    padding-left: 20px;
-}
-
-.law img {
-    width: 280px;
-    height: 2px;
-}
-
-.btn2 {
-    height: 40px;
-    width: 150px;
-    margin-left: 80px;
-    margin-bottom: 10px;
-    background-color: rgb(154, 0, 0);
-    color: white;
-}
-
-.law-pic img {
-    height: 120px;
-    margin-top: 30px;
-
-}
-
-.blog {
-    padding-bottom: 30px;
-    border-right: 1px solid black;
-    padding-right: 25px;
-    padding-left: 25px;
-    border-bottom: 1px solid black;
-}
-
-.cred img {
-    height: 125px;
-}
-
-.cred {
-    display: flex;
-    gap: 20px;
-}
-
-.cred-t h2 {
-    font-size: 1.7rem;
-    /* font-family: Arial, Helvetica, sans-serif; */
-    padding-bottom: 10px;
-    margin-top: 20px;
-}
-
-.cred-t p {
-    font-size: 1.1rem;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-bottom: 20px;
-}
-
-.btn3 {
-    height: 40px;
-    width: 150px;
-    margin-left: 80px;
-    margin-top: 0px;
-    background-color: rgb(154, 0, 0);
-    color: white;
-    padding-left: 8px;
-}
-
-.cred-t img {
-    margin-left: 40px;
-    width: 280px;
-    height: 2px;
-
-}
-
-.cre {
-    padding-left: 30px;
-}
-
-section {
-    margin-top: 100px;
-    padding-bottom: 60px;
-}
-
-span {
-    color: rgb(154, 0, 0);
-
-}
-
-.side1 img {
-    position: absolute;
-    height: 80px;
-    width: 15px;
-    margin-top: 0px;
-
-
-    /* margin-top: 0px; */
-}
-
-.side1 {
-    height: 80px;
-    width: 310px;
-    border: 1px solid black;
-    background-color: grey;
-    margin-bottom: 19px;
-}
-
-.side1 h2 {
-    font-size: 1.5rem;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-left: 25px;
-    padding-bottom: 17px;
-    color: white;
-}
-
-.side1 h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    padding-left: 160px;
-    font-size: 1.1rem;
-    color: white;
-}
-
-.side {
-    margin-left: 60px;
-    padding-bottom: 0px;
-}
-
-.side h1 {
-    font-size: 1.7rem;
-    margin-left: 0px;
-}
-
-.last {
-    display: flex;
-}
-
-.right1 img {
-    height: 2px;
-    width: 200px;
-}
-
-.right1 button {
-    height: 30px;
-    width: 140px;
-    margin-left: 60px;
-    margin-top: 0px;
-    background-color: rgb(154, 0, 0);
-    color: white;
-
-}
-
-.para p {
-    font-size: 1.3rem;
-    color: rgb(36, 31, 31);
-}
-
-.para {
-    padding: 70px;
-    padding-top: 0px;
-}
-
-.para h1 {
+    height: 55px;
+    flex-direction: row;
     margin-bottom: 20px;
 }
 
-.right1 h2 {
-    font-size: 1.7rem;
-    padding-bottom: 5px;
-    color: rgb(55, 53, 53);
+.formparagraph p {
+    font-size: 25px;
+    padding-left: 20px;
 }
 
-.right1 p {
-    font-size: 1.3rem;
+.formparagraph span {
+    font-weight: 800;
+}
+
+.subform {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.sublabel {
+    width: 15%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 25px;
+    padding-left: 20px;
+}
+
+.subinput {
+    width: 40%;
+    gap: 13px;
+    flex-direction: column;
+    height: 150px;
+    display: flex;
+    margin-right: 20px;
+}
+
+.subinput input {
+    height: 35px;
+}
+
+.formimg {
+    width: 40%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formimg img {
+    transform: rotate(19deg);
+    margin-top: 40px;
+}
+
+.textarea1 {
+    width: 92%;
+    height: 85px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.textarea1 textarea {
+    width: 100%;
+    height: 100%;
+
+}
+
+.textarea1 textarea {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 6px;
+}
+
+.textarea1 ::placeholder {
+    color: black;
+}
+
+.btndiv {
+    width: 94%;
+    margin-left: 15px;
+    height: 60px;
+    display: flex;
+}
+
+.btntext1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    flex-direction: column;
+    width: 45%;
+    height: 100%;
+}
+
+.btn1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    flex-direction: column;
+    width: 55%;
+    height: 100%;
+
+}
+
+.btn1 button {
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    font-weight: 500;
+    background-color: brown;
+    border: none;
+    color: white;
+}
+
+.btn1 img {
+    width: 20px;
+    height: 20px;
+}
+
+.main {
+    display: flex;
+    width: 93%;
+    margin-left: 80px;
+    height: 400px;
+    flex-direction: row;
+    margin-bottom: 70px;
+    gap: 20px;
+}
+
+.m1 {
+    display: flex;
+    width: 35%;
+    height: 100%;
+    flex-direction: column;
+
+}
+
+.m2 {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    flex-direction: column;
+    border-left: 1px solid black;
+    border-right:1px solid black ;
+} 
+.m01 {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.m01 span {
+    color: brown;
+}
+
+.m11 {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    font-weight: 500;
+    color: brown;
+    font-size: 25px;
+    margin-bottom: 7px;
+    
+}
+.main12{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.m12 {
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.mp1 {
+    padding-bottom: 20px;
+    line-height: 30px;
+}
+
+.m13 {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.m13 img {
+    width: 80%;
+    height: 90%;
+
+}
+.m14 {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    justify-content: right;
+    align-items: start;
+  
+}
+.btn14{
+    border-top: 1px solid black;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.m14 button {
+    width: 160px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    background-color: brown;
+   
+    
+}
+.m14 img {
+    width: 15px;
+    height: 15px;
+    margin-left: 7px;
+}
+
+.m21 {
+    width: 100%;
+    height: 50%;
+    flex-direction: row;
+    display: flex;
+    
+}
+
+.m22 {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    flex-direction: row;
+    border-top: 1px solid black;
+}
+
+.m211 {
+    width: 50%;
+    height: 100%;
+    font-size: 23px;
+    padding-left: 40px;
+}
+
+.m221 {
+    width: 50%;
+    height: 100%;
+    margin-left: 20px;
+
+}
+.m211 p {
+    font-size: 23px;
+}
+
+.m211 span {
+    color: brown;
+
+}
+
+.m221 img {
+    margin-top: 7px;
+    margin-left: px;
+    width: 84%;
+
+}
+
+.m212 {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.btn212{
+    border-top: 1px solid black;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.m212 button {
+    width: 160px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    background-color: brown;
+   
+}
+
+.m212 img {
+    height: 15px;
+    width: 15px;
+    margin-left: 8px;
+}
+
+.m220 {
+    padding-top: 15px;
+    width: 50%;
+    height: 100%;
+    padding-left: 50px;
+}
+
+.m220 h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.m220 p {
+    font-size: 21px;
+}
+
+.m222 img {
+    width: 100%;
+    height: 80%;
+    margin-left: 1px;
+    margin-top: 5px;
+}
+
+.m22 span {
+    color: brown;
+}
+
+.btn220{
+    width: 200px;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+
+.m220 button {
+    width: 160px;
+    height: 40px;
+    font-size: 20px;
+    background-color: brown;
+    color: white;
+}
+
+.m220 img {
+    width: 15px;
+    height: 15px;
+}
+.m3 {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.main3132{
+    display: flex;
+    flex-direction: row;
+}
+.m31 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.m32 {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    
+
+}
+
+.m33 {
+    height: 20%;
+    width: 100%;
+    font-size: 20px;
+    padding-right: 100px;
+    padding-left: 2px;
+
+}
+
+.m33 span {
+    color: brown;
+}
+
+.m32 img {
+    width: 75%;
+    margin-left: 5px;
+    margin-top: 5px;
+    height: 90%;
+}
+
+.m31 img {
+    width: 85%;
+    margin-left: 5px;
+    margin-top: 5px;
+    height: 90%;
+}
+
+.m34 {
+    width: 100%;
+    height: 10%;
+    font-size: 22px;
+    padding-left: 2px;
+}
+.btn35{
+    border-top: 1px solid black;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.m35 {
+    width: 100%;
+    height: 22%;
+    display: flex;
+    justify-content: end;
+}
+
+.m35 button {
+    width: 160px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    background-color: brown;
+
+}
+
+
+.section1 {
+    width: 100%;
+    height: 1100px;
+    display: flex;
+}
+
+.leftsection {
+    width: 26%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.leftsection h3 {
+    font-size: 30px;
+    padding-left: 18px;
+}
+
+.leftsection span {
+    color: brown;
+}
+
+.midsection {
+    width: 55%;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+}
+
+.midsection h1 {
+    padding-left: 40px;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.midsection p {
+    line-height: 30px;
+    font-size: 20px;
+    padding-left: 40px;
+}
+
+.left1 {
+    width: 97%;
+    margin-left: 3%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
+}
+
+
+.left10 {
+    width: 15px;
+    height: 100%;
+    display: flex;
+
+}
+.mainleft{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.left11 {
+    width: 97%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    font-size: 19px;
+    justify-content: center;
+    align-items: start;
+    color: white;
+}
+
+.left12 {
+    width:100%;
+    height: 50%;
+   display: flex;
+   justify-content: end;
+   align-items: center;
+    border: none;
+}
+
+.left10 img {
+    width: 100%;
+    height: 100%;
+}
+
+.left12 button {
+    width: 170px;
+    height: 40px;
+    font-size: 22px;
+    font-weight: 550;
+    background-color: gray;
+    color: white;
+    border: none;
+}
+
+.left12 img {
+    width: 15px;
+    height: 15px;
+}
+.rightsection {
+    width: 19%;
+    height: 99.5%;
+    flex-direction: column;
+    display: flex;
+    gap: 50px;
 }
 
 .right1 {
-    padding-right: 45px;
-    padding-bottom: 40px;
-}
-
-.logo {
-    height: 160px;
-    margin-left: 20px;
-}
-
-.logo1 {
-    height: 160px;
-    margin-left: 40px;
-    margin-top: 20px;
-}
-
-.follow {
-    margin-top: 20px;
-    margin-left: 20px;
-    font-size: 1.9rem;
-}
-
-.icon img {
-    height: 45px;
-    margin-right: 15px;
-}
-
-.bullet {
     width: 100%;
-}
-
-.last {
-    padding-top: 45px;
-}
-
-.hr {
-    height: 10px;
-    width: 100%;
-}
-
-.btn2 img {
-    height: 15px;
-    width: 15px;
-    position: relative;
-    left: 5px;
-    top: 1px;
-}
-
-.btn img {
-    height: 15px;
-    width: 15px;
-    position: relative;
-    right: 45px;
-    bottom: 15px;
-}
-
-.btn3 img {
-    height: 15px;
-    width: 15px;
-    position: relative;
-    right: 25px;
-    top: 1px;
-}
-
-.clk img {
-    height: 15px;
-    width: 15px;
-    position: relative;
-    left: 10px;
-    top: 2px;
-}
-
-.side1 h3 img {
-    height: 20px;
-    width: 20px;
-    margin-left: 5px;
-}
-
-textarea::placeholder {
-    font-size: 20px;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-left: 30px;
-}
-
-h2 {
-    color: rgb(55, 53, 53);
-}
-
-.icon {
-    padding-bottom: 80px;
-}
-
-@media (max-width:1400px) {
-    body {
-        height: 100%;
-        border: 30px solid grey;
-        border-top: 0px;
-        /* border-bottom: 0px; */
-    }
-
-    html,
-    body {
-        overflow-x: hidden;
-    }
-
-    header {
-        display: flex;
-        gap: 100px;
-    }
-
-    header img {
-        width: 230%;
-    }
-
-    .image img {
-        width: 100%;
-    }
-
-    .text {
-        margin-top: 25px;
-        width: 100%;
-        padding-left: 37%;
-    }
-
-    .top {
-        padding-top: 0%;
-    }
-
-    .form {
-        background-image: url(./img/form_bg.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-    }
-
-    .form p {
-        font-size: 1rem;
-        padding-left: 30px;
-        padding-top: 10px;
-    }
-
-    .btn1 {
-        background-color: rgb(154, 0, 0);
-        height: 30px;
-        width: 220px;
-        /* margin-top: 40px; */
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-        /* margin-left: 295px; */
-        margin-bottom: 0px;
-        font-size: 1rem;
-    }
-
-    textarea {
-        width: 480px;
-        height: 55px;
-        margin-top: -8px;
-        margin-left: 40px;
-    }
-
-    .conf img {
-        position: absolute;
-
-        right: 91px;
-        margin-left: 10px;
-        margin-top: 30px;
-        width: 142px;
-        transform: rotate(20deg);
-        opacity: 0.9;
-    }
-
-    .cre {
-        padding-left: 4px;
-    }
-
-    .pri {
-        display: flex;
-        padding-top: 7px;
-        gap: 27px;
-    }
-
-    section {
-        margin-top: 100px;
-        padding-bottom: 60px;
-        width: 100%;
-        padding-left: 0%;
-    }
-
-    .img img {
-        height: 138px;
-        margin-top: 114px;
-        position: absolute;
-        left: 20rem;
-    }
-
-    .blog {
-        padding-bottom: 30px;
-        border-right: 1px solid black;
-        padding-right: 13px;
-        padding-left: 0px;
-        border-bottom: 1px solid black;
-    }
-
-    .dui h3 {
-    font-size: 1.4rem;
-    font-family: arial;
-    color: rgb(154, 0, 0);
-    padding-bottom: 14px;
-    width: 200%;
-}
-
-.dui h2 {
-    font-size: 2rem;
-    /* font-family: Arial, Helvetica, sans-serif; */
-    padding-bottom: 10px;
-    width: 196%;
-}
-
-    .dui p {
-        font-size: 1.5rem;
-        font-family: Arial, Helvetica, sans-serif;
-        width: 192%;
-    }
-
-
-    .dui {
-        width: 33%;
-        padding-left: 4px;
-
-    }
-
-    .cre {
-        width: 33%;
-        padding-left: 32px;
-    }
-
-    .sec2 {
-        width: 33%;
-
-    }
-
-    .law-pic img {
-        height: 61px;
-        margin-top: 33px;
-        margin-left: -5rem;
-    }
-
-}
-
-
-
-@media (max-width:1200px) {
-    body {
-        height: 100%;
-        border: 30px solid grey;
-        border-top: 0px;
-        /* border-bottom: 0px; */
-    }
-
-    html,
-    body {
-        overflow-x: hidden;
-    }
-
-    header {
-        display: flex;
-        gap: 0px;
-        width: 100%;
-    }
-
-    .top {
-        padding-top: 0%;
-        width: 100%;
-    }
-
-    header img {
-        width: 266%;
-    }
-
-    .image {
-        width: 100%;
-    }
-
-    .text {
-        margin-top: 25px;
-    }
-
-    .text h1 {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 2rem;
-    }
-
-    .text h1 {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 4rem;
-    }
-
-    .text h2 {
-        font-family: Arial, Helvetica, sans-serif;
-        color: rgb(154, 0, 0);
-        font-size: 1.9rem;
-    }
-
-    .text h3 {
-        font-family: Arial, Helvetica, sans-serif;
-        color: grey;
-        font-size: 1.5rem;
-    }
-
-    header img {
-        width: 200%;
-    }
-
-    .img img {
-        height: 140px;
-        margin-top: 50px;
-        position: absolute;
-        left: 20rem;
-    }
-
-    nav {
-        background-color: rgb(154, 0, 0);
-        height: 70px;
-        color: white;
-        font-size: 1.4rem;
-        display: flex;
-        justify-content: end;
-        gap: 35px;
-        padding-left: 101px;
-        padding-top: 25px;
-        width: 71.3rem;
-    }
-
-    a {
-        text-decoration: none;
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-
-    }
-
-    .image {
-        width: 49%;
-    }
-
-    .image img {
-
-        margin-left: 1rem;
-    }
-
-    .image img {
-
-        width: 100%;
-    }
-
-    textarea {
-        width: 437px;
-        height: 50px;
-        margin-top: -9px;
-        margin-left: 40px;
-    }
-
-    .btn1 {
-        background-color: rgb(154, 0, 0);
-        height: 30px;
-        width: 153px;
-        /* margin-top: 40px; */
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-        /* margin-left: 295px; */
-        margin-bottom: 10px;
-        font-size: 0.7rem;
-    }
-
-    .form p {
-        font-size: 1rem;
-        padding-left: 30px;
-        padding-top: 10px;
-    }
-
-    .conf img {
-        /* position: absolute; */
-        /* top: 450px; */
-        /* right: 130px; */
-        margin-left: 10px;
-        margin-top: 30px;
-        width: 123px;
-        transform: rotate(20deg);
-        opacity: 0.9;
-    }
-
-    .form {
-        background-image: url(./img/form_bg.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 50%;
-
-    }
-
-    .sec {
-        padding-top: 30px;
-        padding-left: 0px;
-        display: flex;
-        gap: 25px;
-        width: 100%;
-    }
-
-    .form {
-        background-image: url(./img/form_bg.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 48%;
-    }
-
-
-
-    strong {
-        color: blue;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .Ques {
-        display: flex;
-        gap: 70px;
-    }
-
-    .ques h1 {
-        background-color: rgb(154, 0, 0);
-        padding: 10px;
-        color: white;
-    }
-
-    .form p {
-        font-size: 1rem;
-        padding-left: 30px;
-        padding-top: 0px;
-    }
-
-    form {
-        display: flex;
-        margin-top: 10px;
-        gap: 10px;
-        font-size: 0.4rem;
-        font-family: Arial, Helvetica, sans-serif;
-        padding-left: 20px;
-    }
-
-    .input {
-        width: 20%;
-    }
-
-    .pri {
-        display: flex;
-        padding-top: 10px;
-        gap: 23px;
-    }
-
-    input {
-        width: 223px;
-        height: 30px;
-        margin-bottom: 10px;
-    }
-
-    .name h2 {
-        padding-bottom: 31px;
-        font-size: 155%;
-    }
-
-    textarea {
-        width: 373px;
-        height: 40px;
-        margin-top: -9px;
-        margin-left: 40px;
-    }
-
-    .btn1 {
-        background-color: rgb(154, 0, 0);
-        height: 21px;
-        width: 167px;
-        /* margin-top: 40px; */
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-        /* margin-left: 295px; */
-        margin-bottom: 6px;
-
-    }
-
-    .pri p {
-        color: grey;
-        font-size: 1rem;
-    }
-
-    .note {
-        display: flex;
-    }
-
-    .conf img {
-        /* position: absolute; */
-        /* top: 450px; */
-        /* right: 130px; */
-        padding-left: 30px;
-        margin-top: 49px;
-        width: 132px;
-        transform: rotate(20deg);
-        opacity: 0.9;
-    }
-
-    .cre {
-        padding-left: 22px;
-        padding-top: 29rem;
-        margin-left: -43rem;
-    }
-
-    /* section {
+    height: 170px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
     
- 
-} */
-    .dui p {
-        font-size: 1.5rem;
-        font-family: Arial, Helvetica, sans-serif;
+}
+
+.right10 {
+    width: 100%;
+    height: 40%;
+    font-size: 21px;
+    display: flex;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.right10 span {
+    color: brown;
+}
+
+.right11 {
+    width: 100%;
+    height: 32%;
+    padding-left: 32px;
+    font-size: 22px;
+    padding-right: 20px;
+}
+
+.right12 {
+    width: 90%;
+    height: 29%;  
+}
+.btnright{
+    width: 90%;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+.right12 button {
+    width: 130px;
+    height: 30px;
+    font-size: 15px;
+    background-color: brown;
+    color: white;
+}
+.rightimg {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.rightimg1 {
+    width: 100%;
+    height: 50%;
+
+}
+
+.rightimg2 {
+    width: 100%;
+    height: 50%;
+}
+
+.rightimg1 img {
+    width: 60%;
+    height: 100%;
+    margin-left: 50px;
+}
+
+.rightimg2 img {
+    width: 50%;
+    height: 100%;
+    margin-left: 60px;
+
+}
+
+.foot {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.f1 {
+    width: 100%;
+    height: 45%;
+}
+.f2 {
+    width: 100%;
+    height: 45%;
+}
+
+.f3 {
+    width: 100%;
+    height: 55%;
+}
+
+.f1 h2 {
+    font-size: 26px;
+    padding-left: 40px;
+}
+
+.f1 span {
+    color: brown;
+}
+
+.f2 img {
+    width: 100%;
+}
+
+.f3 img {
+    padding-left: 20px;
+    width: 20%;
+}
+@media (max-width: 1280px) {
+
+    body {
+        overflow-x: hidden;
+        overflow-y: auto;
     }
 
-
-
-    .dui h2 {
-        font-size: 2rem;
-        /* font-family: Arial, Helvetica, sans-serif; */
-        padding-bottom: 10px;
+    .container {
+        width: 100%;
+        max-width: 100%;
     }
 
-    .dui h3 {
-        font-size: 1.4rem;
-        font-family: arial;
-        color: rgb(154, 0, 0);
-        padding-bottom: 14px;
+    .header {
+        width: 100%;
+        height: 200px;
     }
 
-    .note {
-        border-right: 1px solid black;
+    .head1 {
+        width: 61%;
     }
 
-    .btn {
-        height: 40px;
-        width: 150px;
-        margin-left: 250px;
-        background-color: rgb(154, 0, 0);
-        color: white;
-        padding-top: 10px;
+    .head2 {
+        width: 39%;
     }
 
-    .dui img {
-        width: 280px;
-        height: 2px;
-        margin-left: 160px;
+    .head1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
-    .blog {
-        display: flex;
+    .nav {
+        width: 100%;
+        gap: 30px;
+        padding: 10px 30px;
     }
 
-    section {
-
-        margin-top: 100px;
-        padding-bottom: 60px;
-        display: grid;
-        grid-template-columns: 1fr 2fr;
+    .formsection {
+        width: 96%;
+        height: 525px;
+        margin: 30px auto;
     }
 
-    .law h2 {
-        font-size: 2rem;
-        /* font-family: Arial, Helvetica, sans-serif; */
-        padding-bottom: 10px;
+    .firstpic {
+        width: 54%;
     }
 
-    .law p {
-        font-size: 1.4rem;
-        font-family: Arial, Helvetica, sans-serif;
-        padding-bottom: 20px;
+    .secondpic {
+        width: 45%;
+    }   
+    .secondpic h2{
+        font-size: 30px;   
+        padding-left: 15px; 
+    }
+    .formh2 p{
+        font-size: 18px;
+    }
+    .formh2 span{
+        font-size: 27px;
+    }
+    .formparagraph p{
+        font-size: 19px;
+    }
+    .sublabel{
+        font-size: 18px;
+    }
+    .subinput{
+        width: 100%;
+        gap: 10px;
+        height: 110px;
+    }
+    .btntext1 p{
+        font-size: 17.5px;
+    }
+    .btn1 button{
+        font-size: 18px;
+    }
+    .btn1 img{
+        width: 12px;
+        height: 12px;
+    }
+    .main {
+        width: 93%;
+        margin: 0 auto 70px auto;
     }
 
-    .law {
-        padding-left: 20px;
+    .m1 {
+        width: 35%;
+
     }
-
-    .law img {
-        width: 280px;
-        height: 2px;
+    .m1 p{
+        font-size: 18px;
     }
+    .m1 h2{
+        font-size: 26px;
 
-    .btn2 {
-        height: 40px;
-        width: 150px;
-        margin-left: 80px;
-        margin-bottom: 10px;
-        background-color: rgb(154, 0, 0);
-        color: white;
     }
-
-    .law-pic img {
-        height: 56px;
-        margin-top: 60px;
-        padding-left: 300%;
+    .m1 h3{
+        font-size: 20px;
     }
-
-    .law-pic {
-        margin-left: 77px;
+    .m13 img{
+        width: 70%;
+        height: 70%;
     }
-
-
-
-    .blog {
-        padding-bottom: 30px;
-        border-right: 1px solid black;
-        padding-right: 25px;
-        padding-left: 25px;
-        border-bottom: 1px solid black;
-        width: 281%;
-    }
-
-    .cred img {
-        height: 125px;
-    }
-
-    .cred {
-        display: flex;
-        gap: 20px;
-    }
-
-    .cred-t h2 {
-        font-size: 1.7rem;
-        /* font-family: Arial, Helvetica, sans-serif; */
-        padding-bottom: 10px;
+    .m14{
         margin-top: 20px;
     }
-
-    .cred-t p {
-        font-size: 1.1rem;
-        font-family: Arial, Helvetica, sans-serif;
-        padding-bottom: 20px;
+    .m2 {
+        width: 40%;
     }
-
-    .btn3 {
-        height: 40px;
-        width: 150px;
-        margin-left: 80px;
-        margin-top: 0px;
-        background-color: rgb(154, 0, 0);
-        color: white;
-        padding-left: 8px;
+    .m211 h2{
+        font-size: 22px;
     }
-
-    .cred-t img {
-        margin-left: 40px;
-        width: 280px;
-        height: 2px;
+    .m211 p{
+        font-size: 19px;
+    }
+    .m220  h2{
+        font-size: 16px;
+        font-family: serif;
 
     }
-
-    .cre {
-        padding-left: 900px;
-        padding-top: 3rem;
+    .m220 p{
+        font-size: 18px;
+    }
+    .m222{
+        width: 30%;
+        margin-left: 65px;
+    }
+    .m3 {
+        width: 30%;
+    }
+   .m3 h2{
+    font-size: 20px;
+   }
+   .m3 p{
+    font-size: 18px;
+   }
+   .m35{
+    margin-top: 50px;
+   }
+    .section1 {
+        width: 100%;
+        height: 1100px;
+    }
+     
+    .left11 h2{
+        font-size: 20px;
+    }
+    .left12 button{
+        font-size: 19px;
+    }
+    .left12 img{
+        width: 12px;
+        height: 12px;
+    }
+    .leftsection {
+        width: 26%;
     }
 
-    section {
-        margin-top: 100px;
-        padding-bottom: 60px;
+    .midsection {
+        width: 55%;
     }
 
-    span {
-        color: rgb(154, 0, 0);
+    .rightsection {
+        width: 19%;
+    }
+    .right10 h2{
+        font-size: 20px;
+    }
+    .right11 p{
+        font-size: 18px;
+    }
+}
 
+@media (min-width:769px) and (max-width: 1024px) {
+
+    body {
+        overflow-x: hidden;
+      
     }
 
-    .side1 img {
-        position: absolute;
-        height: 80px;
-        width: 15px;
-        margin-top: 0px;
-
-
-        /* margin-top: 0px; */
-    }
-
-    .side1 {
-        height: 80px;
-        width: 310px;
-        border: 1px solid black;
-        background-color: grey;
-        margin-bottom: 19px;
-    }
-
-    .side1 h2 {
-        font-size: 1.5rem;
-        font-family: Arial, Helvetica, sans-serif;
-        padding-left: 25px;
-        padding-bottom: 17px;
-        color: white;
-    }
-
-    .side1 h3 {
-        font-family: Arial, Helvetica, sans-serif;
-        padding-left: 160px;
-        font-size: 1.1rem;
-        color: white;
-    }
-
-    .side {
-        margin-left: 60px;
-        padding-bottom: 0px;
-    }
-
-    .side h1 {
-        font-size: 1.7rem;
-        margin-left: 0px;
-    }
-
-    .last {
-        display: flex;
-    }
-
-    .right1 img {
-        height: 2px;
-        width: 200px;
-    }
-
-    .right1 button {
-        height: 30px;
-        width: 140px;
-        margin-left: 60px;
-        margin-top: 0px;
-        background-color: rgb(154, 0, 0);
-        color: white;
+    .container {
+        width: 100%;
+        max-width: 100%;
 
     }
-
-    .para p {
-        font-size: 1.3rem;
-        color: rgb(36, 31, 31);
+    .header {
+        height: 170px;
     }
 
-    .para {
-        padding: 70px;
-        padding-top: 0px;
+    .head1 {
+        width: 55%;
     }
 
-    .para h1 {
-        margin-bottom: 20px;
+    .head2 {
+        width: 45%;
     }
 
-    .right1 h2 {
-        font-size: 1.7rem;
-        padding-bottom: 5px;
-        color: rgb(55, 53, 53);
-    }
-
-    .right1 p {
-        font-size: 1.3rem;
-    }
-
-    .right1 {
-        padding-right: 45px;
-        padding-bottom: 40px;
-    }
-
-    .logo {
-        height: 160px;
-        margin-left: 20px;
-    }
-
-    .logo1 {
-        height: 160px;
-        margin-left: 40px;
-        margin-top: 20px;
-    }
-
-    .follow {
-        margin-top: 20px;
-        margin-left: 20px;
-        font-size: 1.9rem;
-    }
-
-    .icon img {
-        height: 45px;
+    .headtext {
+        margin-top: 15px;
         margin-right: 15px;
     }
 
-    .bullet {
-        width: 100%;
-    }
-
-    .last {
-        padding-top: 45px;
-    }
-
-    .hr {
-        height: 10px;
-        width: 100%;
-    }
-
-    .btn2 img {
-        height: 15px;
-        width: 15px;
-        position: relative;
-        left: 5px;
-        top: 1px;
-    }
-
-    .btn img {
-        height: 15px;
-        width: 15px;
-        position: relative;
-        right: 45px;
-        bottom: 15px;
-    }
-
-    .btn3 img {
-        height: 15px;
-        width: 15px;
-        position: relative;
-        right: 25px;
-        top: 1px;
-    }
-
-    .clk img {
-        height: 15px;
-        width: 15px;
-        position: relative;
-        left: 10px;
-        top: 2px;
-    }
-
-    .side1 h3 img {
-        height: 20px;
-        width: 20px;
-        margin-left: 5px;
-    }
-
-    textarea::placeholder {
-        font-size: 20px;
-        color: black;
-        font-family: Arial, Helvetica, sans-serif;
-        padding-left: 30px;
-    }
-
-    h2 {
-        color: rgb(55, 53, 53);
-        font-size: 101%;
-    }
-
-    .icon {
-        padding-bottom: 80px;
-    }
-
-
-
-}
-
-
-@media (max-width: 992px) {
-
-
-    html,
-    body {
-        overflow-x: hidden;
-        scroll-behavior: smooth;
-    }
-
-    header {
-        gap: 0px;
-    }
-
-    header img {
-        height: 128px;
-        width: 200%;
-    }
-
-    .text {
-        margin-top: 8px;
-    }
-
-    .text h1 {
-        font-size: 2.5rem;
-    }
-
-    .text h2 {
-        font-size: 1.2rem;
-    }
-
-    .text h3 {
-        font-size: 1rem;
-    }
-
-    nav {
-        background-color: rgb(154, 0, 0);
-        height: 50px;
-        color: white;
-        font-size: 0.9rem;
-        display: flex;
-        justify-content: end;
-        gap: 24px;
-        padding-left: 135px;
-        padding-top: 20px;
-    }
-
-    .sec {
-        padding-top: 30px;
-        padding-left: 30px;
-        display: flex;
-        gap: 20px;
-        width: 100%;
-    }
-
-    a {
-        text-decoration: none;
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-
-    }
-
-    .img img {
-        height: 147px;
-        margin-top: 77px;
-        position: absolute;
-        left: 39rem;
-    }
-
-    .cre {
-        padding-left: 901px;
-        padding-top: 2rem;
-        width: 126%;
-    }
-
-    section {
-        margin-top: 5px;
-        padding-left: 150px;
-        display: inline;
-    }
-
-    .dui {
-        padding-left: 184px;
-    }
-
-    .dui h2 {
-        font-size: 3rem;
-        /* font-family: Arial, Helvetica, sans-serif; */
-        padding-bottom: 12px;
-    }
-
-    .law h2 {
-        font-size: 3rem;
-        /* font-family: Arial, Helvetica, sans-serif; */
-        padding-bottom: 10px;
-    }
-
-    .law p {
-        font-size: 1.6rem;
-        font-family: Arial, Helvetica, sans-serif;
-        padding-bottom: 20px;
-    }
-
-    .cred-t h2 {
-        font-size: 2.7rem;
-        /* font-family: Arial, Helvetica, sans-serif; */
-        padding-bottom: 14px;
-        margin-top: 51px;
-    }
-
-    .cred-t p {
-        font-size: 1.6rem;
-        font-family: Arial, Helvetica, sans-serif;
-        padding-bottom: 20px;
-    }
-
-    .sec {
-        display: flex;
-        flex-direction: row;
-        margin-left: 0rem;
-        gap: 4%;
-        padding-left: 0%;
-    }
-
-    .side {
-        margin-left: 170px;
-        padding-bottom: 0px;
-    }
-
-    .side1 {
-        height: 80px;
-        width: 500px;
-        border: 1px solid black;
-        background-color: grey;
-        margin-bottom: 19px;
-    }
-
-    .side1 h3 {
-        font-family: Arial, Helvetica, sans-serif;
-        padding-left: 334px;
-        font-size: 1.1rem;
-        color: white;
-    }
-
-    .form {
-        background-image: url(./img/form_bg.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 400px;
-    }
-
-    strong {
-        color: blue;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .Ques {
-        display: flex;
-        gap: 70px;
-    }
-
-    .ques h1 {
-        background-color: rgb(154, 0, 0);
-        padding: 10px;
-        color: white;
-        font-size: 0.6rem;
-    }
-
-    .form p {
-        font-size: 0.9rem;
-        padding-left: 15px;
-        padding-top: 3%;
-        margin-top: -4%;
-    }
-
-    form {
-        /* display: flex; */
-        margin-top: 5px;
-        gap: 10px;
-        font-size: 0.9rem;
-        font-family: Arial, Helvetica, sans-serif;
-        padding-left: 20px;
-        width: 650px;
-    }
-
-    h2 {
-        color: rgb(55, 53, 53);
-        font-size: 66%;
-    }
-
-    .form {
-        background-image: url(./img/form_bg.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 46%;
-
-
-    }
-
-    .note {
-        border-right: 1px solid black;
-        width: 150%;
-    }
-
-    .cred img {
-        height: 176px;
-    }
-
-    .cred-t p {
-        font-size: 1.6rem;
-        font-family: Arial, Helvetica, sans-serif;
-        padding-bottom: 20px;
-
-    }
-
-
-
-    .pri {
-        /* display: flex; */
-        padding-top: 10px;
-        gap: 23px;
-    }
-
-    input {
-        width: 160px;
-        height: 15px;
-        margin-bottom: 10px;
-    }
-
-    .name h2 {
-        padding-bottom: 7px;
-        font-size: 0.9rem;
-    }
-
-    textarea {
-        width: 290px;
-        height: 32px;
-        margin-top: -7px;
-        margin-left: 40px;
-    }
-
-
-
-
-    textarea::placeholder {
-        font-size: 10px;
-    }
-
-    .btn1 {
-        background-color: rgb(154, 0, 0);
-        height: 18px;
-        width: 129px;
-        margin-top: -12px;
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-        /* margin-left: 295px; */
-        margin-bottom: 1px;
-        font-size: 0.6rem;
-    }
-
-    .pri p {
-        color: grey;
-        font-size: 0.7rem;
-    }
-
-    .para p {
-        font-size: 2.3rem;
-        color: rgb(36, 31, 31);
-    }
-
-    .image img {
-
-        width: 100%;
-
-
-    }
-
-    .last {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .right {
-        padding-left: 211px;
-        font-size: 4rem;
-    }
-
-    .right1 {
-        padding-bottom: 50px;
-    }
-
-    .right1 h2 {
-        font-size: 2.7rem;
-        padding-bottom: 5px;
-        color: rgb(55, 53, 53);
-    }
-
-    .right1 p {
-        font-size: 2.3rem;
-    }
-
-    .conf img {
-        position: absolute;
-
-        right: 39px;
-
-        margin-top: 27px;
-        width: 110px;
-        transform: rotate(20deg);
-        opacity: 0.9;
-    }
-
-    .blog {
-        padding-bottom: 30px;
-        border-right: 1px solid black;
-        padding-right: 65px;
-        padding-left: 88px;
-        border-bottom: 1px solid black;
-        width: 637px;
-        margin-left: 9rem;
-        border-left: 1px solid black;
-    }
-
-    .logo {
-        height: 166px;
-        margin-left: 7px;
-        margin-bottom: -4rem;
-    }
-
-    .logo1 {
-        height: 160px;
-        margin-left: 249px;
-        margin-top: -130px;
-    }
-
-    .follow {
-        margin-top: 5px;
-        margin-left: 92px;
-        font-size: 1.9rem;
-    }
-
-    .im {
-        margin-left: 5rem;
-    }
-
-    .icon {
-        padding-bottom: 80px;
-        margin-left: 3rem;
-    }
-}
-
-@media (max-width: 768px) {
-
-    html,
-    body {
-        overflow-x: hidden;
-    }
-
-    header {
-        gap: 120px;
-    }
-
-    header img {
-        height: 80px;
-    }
-
-    .text {
-        margin-top: 5px;
-    }
-
-    .text h1 {
-        font-size: 2.1rem;
-    }
-
-    .text h2 {
-        font-size: 1rem;
-    }
-
-    .text h3 {
-        font-size: 0.8rem;
-    }
-
-    nav {
-        background-color: rgb(154, 0, 0);
-        height: 50px;
-        color: white;
-        font-size: 0.8rem;
-        display: flex;
-        justify-content: end;
-        gap: 12px;
-        padding-right: 1px;
-        padding-top: 17px;
-        width: 709px;
-        padding-left: 259px;
-    }
-
-    a {
-        text-decoration: none;
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-
-    }
-
-    section {
-        margin-top: 5px;
-        padding-left: 10px;
-        display: inline;
-    }
-
-    .dui {
-        padding-left: 100px;
-        padding-bottom: 30px;
-    }
-
-    .dui h2 {
-        font-size: 40px;
-    }
-
-    .dui h3 {
-        font-size: 25px;
-    }
-
-    .dui p {
-        font-size: 25px;
-        width: 150%;
-    }
-
-    .image {
-        width: 50%;
-    }
-
-    .img img {
-        width: 100px;
-        margin-left: -54px;
-        margin-top: 90px;
-    }
-
-    .sec {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .form {
-        background-image: url(./img/form_bg.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 400px;
-    }
-
-    strong {
-        color: blue;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .Ques {
-        display: flex;
-        gap: 70px;
-    }
-
-    .ques h1 {
-        background-color: rgb(154, 0, 0);
-        padding: 10px;
-        color: white;
-    }
-
-    .form p {
-        font-size: 1.2rem;
-        padding-left: 82px;
-        padding-top: 16px;
-    }
-
-    form {
-        /* display: flex; */
-        margin-top: 20px;
-        gap: 10px;
-        font-size: 0.9rem;
-        font-family: Arial, Helvetica, sans-serif;
-        padding-left: 20px;
-        width: 650px;
-    }
-
-    .form {
-        background-image: url(./img/form_bg.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 650px;
-        margin-left: 2rem;
-    }
-
-    .pri {
-        /* display: flex; */
-        padding-top: 10px;
-        gap: 23px;
-    }
-
-    input {
-        width: 250px;
-        height: 20px;
-        margin-bottom: 10px;
-    }
-
-    .name h2 {
-        font-size: 10px;
-        padding-bottom: 20px;
-    }
-
-    textarea {
-        width: 300px;
-        height: 50px;
-        margin-top: 0px;
-        margin-left: 40px;
-    }
-
-    .btn1 {
-        background-color: rgb(154, 0, 0);
-        height: 25px;
-        width: 160px;
-        /* margin-top: 40px; */
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-        /* margin-left: 295px; */
-        margin-bottom: 10px;
-        font-size: 0.8rem;
-    }
-
-    .pri p {
-        color: grey;
-        font-size: 0.9rem;
-    }
-
-    .image img {
-        width: 650px;
-        margin-left: 1.9rem;
-
-
-    }
-
-    .law-pic img {
-        height: 75px;
-        margin-top: 30px;
-        padding-left: 145%;
-    }
-
-
-    .sec2 {
-
-        margin-left: -10%;
-    }
-
-    .law h2 {
-        font-size: 2.7rem;
-        /* font-family: Arial, Helvetica, sans-serif; */
-        padding-bottom: 10px;
-    }
-
-    .law p {
-        font-size: 1.6rem;
-        font-family: Arial, Helvetica, sans-serif;
-        padding-bottom: 20px;
-    }
-
-    .law {
-        padding-left: 45px;
-
-    }
-
-    .cre {
-        padding-top: 40px;
-        padding-left: 819px;
-        padding-bottom: 40px;
-    }
-
-    .cred-t h2 {
-        font-size: 2.7rem;
-    }
-
-    .cred-t p {
-        font-size: 1.5rem;
-        width: 500%;
-    }
-
-    .cred img {
-        height: 140px;
-    }
-
-    .lawpic img {
-        height: 131px;
-    }
-
-    .last {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .right {
-        padding-left: 70px;
-    }
-
-    .right1 {
-        padding-bottom: 50px;
-    }
-
-    .side1 {
-        height: 88px;
-        width: 360px;
-        border: 1px solid black;
-        background-color: grey;
-        margin-bottom: 19px;
-    }
-
-    .side1 h2 {
-        font-size: 1.8rem;
-        font-family: Arial, Helvetica, sans-serif;
-        padding-left: 25px;
-        padding-bottom: 17px;
-        color: white;
-    }
-
-    .side1 h3 {
-        font-family: Arial, Helvetica, sans-serif;
-        padding-left: 160px;
-        font-size: 1.5rem;
-        color: white;
-    }
-
-    .side {
-        margin-left: 80px;
-        padding-bottom: 0px;
-    }
-
-    .side h1 {
-        font-size: 2.7rem;
-        margin-left: 0px;
-    }
-
-    .side1 img {
-        height: 86px;
-        width: 20px;
-        margin-bottom: 30px;
-    }
-
-    .conf img {
-        width: 177px;
-        transform: rotate(13deg);
-        opacity: 0.9;
-        margin-top: 3%;
-        margin-right: 25%;
-    }
-
-    .logo {
-        height: 160px;
-        margin-left: 110px;
-        margin-bottom: -4rem;
-    }
-
-    .logo1 {
-        height: 154px;
-        margin-left: 338px;
-        margin-top: -180px;
-    }
-
-    .follow {
-        margin-top: 20px;
-        margin-left: 179px;
-        font-size: 1.9rem;
-    }
-
-    .icon {
-        padding-bottom: 73px;
-        padding-left: 10rem;
-    }
-
-    .blog {
-        padding-bottom: 26px;
-        border-right: 1px solid black;
-        padding-right: 48px;
-        padding-left: 49px;
-        border-bottom: 1px solid black;
-        width: 583px;
-        margin-left: 8rem;
-        border-left: 1px solid black;
-    }
-
-    .im {
-        margin-left: 10rem;
-    }
-}
-
-@media (max-width: 576px) {
-
-    header {
-        gap: 80px;
-    }
-
-    header img {
-        height: 60px;
-    }
-
-    .text {
-        margin-top: 5px;
-    }
-
-    .text h1 {
-        font-size: 1.7rem;
-    }
-
-    .text h2 {
-        font-size: 0.8rem;
-    }
-
-    .text h3 {
-        font-size: 0.64rem;
-    }
-
-    nav {
-        background-color: rgb(154, 0, 0);
-        height: 35px;
-        color: white;
-        font-size: 0.65rem;
-        display: flex;
-        justify-content: center;
-        gap: 14px;
-        padding-right: 62px;
-        padding-top: 10px;
-    }
-
-    a {
-        text-decoration: none;
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-
-    }
-
-    section {
-
-        display: inline;
-    }
-
-    .dui {
-        padding-left: 30px;
-        margin-left: 20px;
-        padding-bottom: 60px;
-    }
-
-    .dui h2 {
-        font-size: 34px;
-    }
-
-    .dui h3 {
-        font-size: 19px;
-    }
-
-    .dui p {
-        font-size: 19px;
-    }
-
-    .img img {
-        margin-left: -219px;
-        margin-top: 50px;
-    }
-
-    .sec {
-        display: flex;
-        padding-top: 10px;
-        padding-left: 10px;
-        flex-direction: column;
-    }
-
-    .form {
-        background-image: url(./img/form_bg.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 400px;
-    }
-
-    strong {
-        color: blue;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .Ques {
-        display: flex;
-        gap: 70px;
-    }
-
-    .ques h1 {
-        background-color: rgb(154, 0, 0);
-        padding: 10px;
-        color: white;
-    }
-
-    .form p {
-        font-size: 1.1rem;
-        padding-left: 30px;
-        padding-top: 10px;
-    }
-
-    form {
-        /* display: flex; */
-        margin-top: 20px;
-        gap: 10px;
-        font-size: 0.9rem;
-        font-family: Arial, Helvetica, sans-serif;
-        padding-left: 20px;
-        width: 650px;
-    }
-
-    .form {
-        background-image: url(./img/form_bg.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 500px;
-        margin-left: 0rem;
-    }
-
-    .blog {
-        padding-bottom: 26px;
-        border-right: 1px solid black;
-        padding-right: 65px;
-        padding-left: 1px;
-        border-bottom: 1px solid black;
-        width: 439px;
-        margin-left: 5rem;
-        border-left: 1px solid black;
-    }
-
-    .pri {
-        /* display: flex; */
-        padding-top: 10px;
-        gap: 23px;
-    }
-
-    input {
-        width: 250px;
-        height: 20px;
-        margin-bottom: 10px;
-    }
-
-    .name h2 {
-        font-size: 10px;
-        padding-bottom: 20px;
-    }
-
-    textarea {
-        width: 300px;
-        height: 50px;
-        margin-top: 0px;
-        margin-left: 40px;
-    }
-
-    .btn1 {
-        background-color: rgb(154, 0, 0);
-        height: 25px;
-        width: 160px;
-        /* margin-top: 40px; */
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-        /* margin-left: 295px; */
-        margin-bottom: 10px;
-        font-size: 0.8rem;
-    }
-
-    .pri p {
-        color: grey;
-        font-size: 0.9rem;
-    }
-
-    .image img {
-        width: 500px;
-        margin-left: -2px;
-
-
-    }
-
-    .law h2 {
-        font-size: 34px;
-        /* font-family: Arial, Helvetica, sans-serif; */
-        padding-bottom: 10px;
-    }
-
-    .law p {
-        font-size: 19px;
-        font-family: Arial, Helvetica, sans-serif;
-        padding-bottom: 20px;
-    }
-
-    .law {
-        padding-left: 20px;
-
-    }
-
-    .cre {
-        padding-top: 40px;
-        padding-left: 768px;
-        padding-bottom: 40px;
-        width: 182%;
-    }
-
-    .cred-t h2 {
-        font-size: 34px;
-    }
-
-    .cred-t p {
-        font-size: 20px;
-    }
-
-    .cred img {
-        height: 110px;
-    }
-
-    .law-pic img {
-        height: 56px;
-        margin-left: -67px;
-        margin-top: 31px;
-    }
-
-    .last {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .side1 {
-        height: 88px;
-        width: 360px;
-        border: 1px solid black;
-        background-color: grey;
-        margin-bottom: 19px;
-    }
-
-    .side1 h2 {
-        font-size: 1.8rem;
-        font-family: Arial, Helvetica, sans-serif;
-        padding-left: 25px;
-        padding-bottom: 17px;
-        color: white;
-    }
-
-    .side1 h3 {
-        font-family: Arial, Helvetica, sans-serif;
-        padding-left: 160px;
-        font-size: 1.5rem;
-        color: white;
-    }
-
-    .side {
-        margin-left: 80px;
-        padding-bottom: 0px;
-    }
-
-    .side h1 {
-        font-size: 2rem;
-        margin-left: 0px;
-    }
-
-    .side1 img {
-        height: 86px;
-        width: 20px;
-        margin-bottom: 30px;
-    }
-
-    .conf img {
-
-        width: 150px;
-        transform: rotate(13deg);
-        opacity: 0.9;
-        margin-right: 8%;
-        margin-top: 6%;
-    }
-
-    .right1 h2 {
-        font-size: 34px;
-        padding-bottom: 5px;
-        color: rgb(55, 53, 53);
-    }
-
-    .right1 p {
+    .headtext h2 {
         font-size: 24px;
     }
 
-    .right1 {
-        padding-right: 65px;
-        padding-bottom: 40px;
+    .headtext h6 {
+        font-size: 50px;
+    }
+
+    .headtext p {
+        font-size: 21px;
+    }
+
+    .headtext hr {
+        width: 280px;
+    }
+    .nav {
+        gap: 18px;
+        padding-right: 15px;
+    }
+
+    .nav a {
+        font-size: 20px;
+    }
+    .formsection {
+        width: 94%;
+        height: 480px;
+        margin: 25px auto;
+        gap: 15px;
+    }
+
+    .firstpic {
+        width: 50%;
+    }
+
+    .secondpic {
+        width: 50%;
+    }
+
+    .formh1 {
+        width: 150px;
+    }
+    .btn1 button{
+        font-size: 19px;
+    }
+    .btn1 button img{
+        width: 12px ;
+        height: 12px;
+    }
+
+    .formh1 h2 {
+        width: 158px;
+        font-size: 27px;
+    }
+
+    .formh2 {
+        margin-left: 10px;
+        width: calc(100% - 160px);
+    }
+
+    .formh2 p {
+        font-size: 25px;
+    }
+
+    .formh2 span {
+        font-size: 32px;
+    }
+
+    .formparagraph p {
+        font-size: 19px;
+        padding-left: 12px;
+    }
+
+    .sublabel {
+        width: 20%;
+        font-size: 20px;
+        padding-left: 10px;
+    }
+
+    .subinput {
+        width: 45%;
+        margin-right: 10px;
+    }
+
+    .formimg {
+        width: 35%;
+    }
+    .main {
+        width: 98%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 800px;
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .m1 {
+        grid-column-start: 1;
+        width: 100%;
+        grid-column-end: 2;
+        height: 100%;
+
+    }
+    .main3132 img {
+        width: 160px;
+        height: 150px;
+     
+    }
+    .m31 img{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        justify-content: left;
+    }
+    .m31{
+        justify-content: flex-end;
+    }
+    .m14{
+        margin-top: 5px;
+    }
+    .m1 h2{
+        font-size: 23px;
+    }
+
+    .m2 {
+       grid-column-start: 2;
+        grid-column-end: 3;
+        width: 100%;
+        height: 100%;
+    }
+
+    .m3 {
+        grid-row-start: 2;
+        grid-row-end: 3;
+         width: 100%;
+        height: 100%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+       
+    }
+
+    .m01 {
+        font-size: 17px;
+    }
+
+    .m11 {
+        font-size: 21px;
+    }
+
+    .m12 {
+        font-size: 17px;
+    }
+
+    .m13 img {
+        width: 70%;
+        height: 60%;
+    }
+    .m14{
+        margin-top:90px;
+    }
+
+    .m211 {
+        padding-left: 20px;
+        font-size: 19px;
+    }
+
+    .m211 p {
+        font-size: 19px;
+    }
+
+    .m220 {
+        padding-left: 20px;
+    }
+    .m222 img{
+        min-height: 55%;
+        min-width: 60%;
+    }
+
+    .m220 h2 {
+        font-size: 23px;
+    }
+
+    .m220 p {
+        font-size: 17px;
+    }
+
+    .m33 {
+        padding-right: 20px;
+        font-size: 17px;
+    }
+    .m33 h2{
+        font-size: 26px;
+    }
+
+    .m33{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .m34{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .m34 p{
+        font-size: 17px;
+        margin-top: 1px;
+    }
+    .m35{
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn220{
+        margin-top: 45px;
+    }
+    .section1 {
+        display: grid;
+        width: 100%;
+        height: 1700px;
+        grid-template-columns: 1fr 1.3fr;
+        grid-template-rows: auto auto;
+    }
+
+    .leftsection {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        width: 100%;
+    }
+
+    .midsection {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        width: 100%;
+    }
+
+    .rightsection {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: 100%;
+      
+    }
+
+    .leftsection h3 {
+        font-size: 18px;
+    }
+
+    .left1 {
+        width: 95%;
+        margin-left: 2%;
+    }
+
+    .left11 {
+        font-size: 13px;
+    }
+
+    .left12 button {
+        width: 140px;
+        font-size: 18px;
+    }
+
+    .midsection h1 {
+        padding-left: 20px;
+        font-size: 29px;
+    }
+
+    .midsection p {
+        padding-left: 20px;
+        padding-right: 15px;
+        font-size: 17px;
+        line-height: 27px;
+    }
+
+    .right10 {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 12px;
+          display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right11 {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 17px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btnright{
+        display: flex;
+        margin-left: 90px;
+        justify-content: center;
+        align-items: center;
+    }
+  
+
+    .rightimg1 img {
+        width:20%;
+        height: 100%;
+        margin-left: 350px;
+        margin-right: auto;
+        
+    }
+
+    .rightimg2 img {
+        width: 20%;
+        margin-right: auto;
+        margin-left: 350px;
+    }
+    .f1 h2 {
+        font-size: 22px;
+        padding-left: 25px;
+         
+    }
+
+    .f3 img {
+        width: 10%;
+        
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+    }
+    .header {
+        height: auto;
+        min-height: 150px;
+        flex-direction: column;
+    }
+
+    .head1,
+    .head2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .head1 img {
+        width: 100%;
+        height: 150px;
+     
+    }
+
+    .headtext {
+        margin: 15px 10px;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .headtext h2 {
+        font-size: 22px;
+    }
+
+    .headtext h6 {
+        font-size: 45px;
+    }
+
+    .headtext p {
+        font-size: 20px;
+    }
+
+    .headtext hr {
+        width: 80%;
+    }
+    .nav {
+        height: auto;
+        min-height: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .nav a {
+        font-size: 18px;
+    }
+    .formsection {
+        width: 94%;
+        height: auto;
+        margin: 20px auto;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .firstpic,
+    .secondpic {
+        width: 100%;
+        height: auto;
+    }
+
+    .firstpic {
+        height: 350px;
+    }
+
+    .firstpic img {
+        height: 350px;
+      
+    }
+
+    .secondpic {
+        padding-bottom: 20px;
+    }
+
+    .formhead {
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .formh1 {
+        width: 180px;
+    }
+
+    .formh1 h2 {
+        width: 180px;
+        font-size: 28px;
+    }
+
+    .formh2 {
+        width: auto;
+        margin-left: 15px;
+    }
+
+    .formh2 p {
+        font-size: 22px;
+    }
+
+    .formh2 span {
+        font-size: 32px;
+    }
+
+    .formparagraph {
+        height: auto;
+    }
+
+    .formparagraph p {
+        font-size: 19px;
+    }
+
+    .subform {
+        height: auto;
+    }
+
+    .sublabel {
+        width: 25%;
+        font-size: 20px;
+    }
+
+    .subinput {
+        width: 45%;
+    }
+
+    .formimg {
+        width: 30%;
+    }
+
+    .textarea1 {
+        width: 90%;
+    }
+    .main {
+        width: 94%;
+        height: auto;
+        margin: 30px auto;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .m1 {
+        width: 100%;
+        height: auto;
         margin-bottom: 30px;
     }
 
-    .logo {
-        height: 130px;
-        margin-left: -82px;
-    }
-
-    .logo1 {
-        height: 129px;
-        margin-left: 98px;
-        margin-top: -71px;
-    }
-
-    .follow {
-        margin-top: 20px;
-        margin-left: 30px;
-        font-size: 1.9rem;
-    }
-
-    .icon img {
-        height: 45px;
-
-        margin-left: -26px;
-    }
-
-    .right {
-        padding-left: 150px;
+    .m2 {
+        width: 100%;
+        height: auto;
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding:auto;
 
     }
-
-    .icon {
-        padding-bottom: 73px;
-        padding-left: 0rem;
+ .m211{
+    padding-left: 0px;
+ }
+ .m220{
+    padding-left: 0px;
+    font-size: 20px;
+ }
+ .m220 h2{
+    font-size: 20px;
+ }
+    .m3 {
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
     }
 
-    .im {
-        margin-left: 1rem;
+    .m01,
+    .m11 {
+        height: auto;
+        min-height: 40px;
     }
 
+    .main12 {
+        height: auto;
+    }
+
+    .m12 {
+        width: 60%;
+    }
+
+    .m13 {
+        width: 40%;
+    }
+
+    .m13 img {
+        height: auto;
+    }
+    .m221 img{
+            justify-content: right;
+            display: flex;
+            align-items: center ;
+    }
+    .m21,
+    .m22 {
+        height: auto;
+        min-height: 200px;
+    }
+    .section1 {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .leftsection,
+    .midsection,
+    .rightsection {
+        width: 100%;
+        height: auto;
+    }
+
+    .leftsection {
+        gap: 15px;
+    }
+
+    .midsection h1,
+    .midsection p {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .left1 {
+        width: 94%;
+        margin: auto;
+    }
+
+    .rightsection {
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    .rightimg {
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .rightimg1,
+    .rightimg2 {
+        width: 50%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rightimg1 img,
+    .rightimg2 img {
+        min-width: 200px;
+        margin: 0 auto;
+        display: block;
+       
+    }
+    .foot {
+        height: auto;
+       
+    }
+
+    .f1,    
+    .f3 {
+        height: auto;
+        min-height: 50px;
+    }
+    .f2 img{
+        max-width: 50%;
+        
+    }
+
+    .f1 h2 {
+        font-size: 22px;
+        padding-left: 20px;
+    }
+
+    .f3 img {
+        width: 10%;
+    }
 }
+
+@media (max-width: 480px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .header {
+        min-height: auto;
+    }
+
+    .head1 img {
+        height: 110px;
+    }
+
+    .headtext {
+        margin: 10px 5px;
+    }
+
+    .headtext h2 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .headtext h6 {
+        font-size: 32px;
+    }
+
+    .headtext p {
+        font-size: 16px;
+    }
+
+    .headtext hr {
+        width: 75%;
+        height: 3px;
+    }
+    .nav {
+        gap: 8px;
+        padding: 8px 5px;
+    }
+
+    .nav a {
+        font-size: 10px;
+    }
+    .formsection {
+        width: 94%;
+        margin: 15px auto;
+    }
+
+    .firstpic img {
+        width: 100%;
+    }
+
+    .formhead {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formh1 {
+        width: 160px;
+        height: 50px;
+    }
+
+    .formh1 h2 {
+        width: 160px;
+        height: 50px;
+        font-size: 23px;
+    }
+
+    .formh2 {
+        width: 100%;
+        height: auto;
+        margin: 5px 0 0;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .formh2 p {
+        font-size: 17px;
+    }
+
+    .formh2 span {
+        font-size: 25px;
+    }
+
+    .formparagraph {
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .formparagraph p {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .subform {
+        flex-wrap: wrap;
+        padding: 0 10px;
+    }
+
+    .sublabel {
+        width: 25%;
+        font-size: 16px;
+        padding-left: 0;
+        gap: 25px;
+        font-size: 20px;
+    }
+
+    .subinput {
+        width: 70%;
+        margin-right: 5px;
+    }
+
+    .subinput input {
+        height: 30px;
+        width: 100%;
+    }
+
+    .formimg {
+        width: 60%;
+    }
+
+    .formimg img {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .textarea1 {
+        width: 90%;
+        height: 70px;
+        margin: 10px auto;
+    }
+
+    .textarea1 textarea {
+        font-size: 15px;
+    }
+
+    .btndiv {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .btntext1 {
+        font-size: 13.5px;
+    }
+
+    .btn1 button {
+        font-size: 15px;
+    }
+.btn1 img{
+    width: 10px ;
+    height: 10px;
+}
+    .main {
+        width: 94%;
+        margin: 20px auto;
+   
+    }
+
+    .m01 {
+        font-size: 16px;
+    }
+
+    .m11 {
+        font-size: 19px;
+    }
+
+    .main12 {
+        flex-direction: column;
+       
+    }
+    .m12 {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .m13 {
+        width: 100%;
+        height: 180px;
+    }
+
+    .m13 img {
+        width: 30%;
+        height: 80%;
+    }
+
+    .m21,
+    .m22 {
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .m211,
+    .m221,
+    .m220 {
+        width: 60%;
+        padding-left: 15px;
+        margin-left: 0;
+    }
+   .m222 img{
+    width: 100%;
+   }
+
+    .m211 {
+        padding-top: 15px;
+    }
+
+    .m221 {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .m221 img {
+        width: 50%;
+        margin: 0;
+    }
+
+    .m220 {
+        padding: 15px;
+    }
+
+    .m220 h2 {
+        font-size: 23px;
+    }
+
+    .m220 p {
+        font-size: 17px;
+    }
+      .m3 h2{
+        font-size: 17px;
+    }
+    .m34 p{
+        font-size: 17px;
+    }
+
+    .m35{
+        margin-top: 30px;
+    }
+    .section1 {
+        flex-direction: column;
+    }
+    
+  
+    .leftsection h3 {
+        font-size: 23px;
+        padding-left: 12px;
+    }
+
+    .left1 {
+        width: 94%;
+        height: 90px;
+    }
+
+    .left11 {
+        font-size: 15px;
+    }
+
+    .left12 button {
+        width: 130px;
+        font-size: 17px;
+    }
+
+    .midsection h1 {
+        font-size: 27px;
+        padding: 0 15px;
+    }
+
+    .midsection p {
+        font-size: 16px;
+        line-height: 25px;
+        padding: 0 15px;
+    }
+
+    .rightsection {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .right10,
+    .right11 {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 17px;
+    }
+
+    .rightimg {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .rightimg1,
+    .rightimg2 {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .rightimg1 img,
+    .rightimg2 img {
+        width: 40%;
+        height: 80%;
+        margin: auto;
+        display: block;
+    }
+    .foot{
+        display: flex;
+    }
+    .f1 h2 {
+        font-size: 19px;
+        padding-left: 10px;
+    }
+
+    .f3 img {
+        width: 10%;
+        padding-left: 10px;
+    }
+}
+
+
+/* 360px - Small Mobile */
+@media (max-width: 360px) {
+
+    .headtext h6 {
+        font-size: 28px;
+    }
+
+    .headtext h2 {
+        font-size: 16px;
+    }
+
+    .headtext p {
+        font-size: 14px;
+    }
+
+    .nav {
+        gap: 5px;
+        padding: 6px 3px;
+    }
+
+    .nav a {
+        font-size: 9px;
+    }
+
+    .formsection {
+        width: 96%;
+        margin: 10px auto;
+    }
+
+    .formh1 h2 {
+        font-size: 20px;
+    }
+
+    .formh2 p {
+        font-size: 15px;
+    }
+
+    .formh2 span {
+        font-size: 22px;
+    }
+
+    .sublabel {
+        font-size: 16px;
+    }
+
+    .subinput input {
+        height: 28px;
+    }
+
+    .textarea1 {
+        width: 94%;
+    }
+
+    .textarea1 textarea {
+        font-size: 13px;
+    }
+
+    .btntext1 {
+        font-size: 12px;
+    }
+
+    .btn1 button {
+        font-size: 13px;
+    }
+
+    .midsection h1 {
+        font-size: 23px;
+    }
+
+    .midsection p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .right10,
+    .right11 {
+        font-size: 15px;
+    }
+
+    .f1 h2 {
+        font-size: 17px;
+    }
+}
+
